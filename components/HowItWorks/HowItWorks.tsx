@@ -38,7 +38,7 @@ const TextWrapper = styled.div`
   font-size: 25px;
   text-align: center;
   color: #ffffff;
-  @screen (min-width: 992px){
+  @media (min-width: 992px){
   font-size: 50px;
   line-height: 59px;
   padding: 100px;
