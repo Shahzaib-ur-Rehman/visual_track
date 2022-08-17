@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 100;
   `
 const Heading = styled.h2`
   font-family: 'Roboto';

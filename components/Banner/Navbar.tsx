@@ -89,13 +89,16 @@ const Nav = styled.div`
   padding: 0 20px;
   margin: auto;
   max-width: 1440px;
-  background: linear-gradient(148.05deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
-  @media (min-width: 576px) {
-    padding: 0 15px;
-  }
-  @media(min-width:768px){
-    display: none;
+  /* background: linear-gradient(148.05deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 100%), */
+  background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.7) 0%, rgba(182, 145, 255, 0.4) 67.71%, rgba(255, 255, 255, 0) 100%);
 
+
+  @media (min-width: 576px) {
+    padding: 8px 15px;
+  }
+
+@media(min-width: 992px){
+    display: none;
 }
 `;
 

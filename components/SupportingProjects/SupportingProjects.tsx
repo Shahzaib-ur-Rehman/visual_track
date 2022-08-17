@@ -37,7 +37,7 @@ const SupportingProjects: NextPage = () => {
 
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }} paddingY="40px">
       <Grid container spacing={2}>
         <Grid item xs={8} md={12}  margin={'auto'}>
           <Wrapper >
