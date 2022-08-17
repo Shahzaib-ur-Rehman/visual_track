@@ -1,0 +1,182 @@
+import type { NextPage } from 'next'
+import styled from 'styled-components';
+import Image from 'next/image';
+
+import arrowImage from '../../public/svg/arrow.svg'
+const Wrapper = styled.div` 
+    text-align: center;
+    
+  `
+const Heading = styled.h2`
+ background: linear-gradient(90deg, #0DCCF2 -24.73%, #AA00FF 124.6%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+margin-bottom: 25px;
+@media(min-width:576px){
+  font-size: 48px;
+  margin-bottom: 40px;
+  line-height: 120%;
+}
+  `;
+
+const SpanContent = styled.div`
+     margin-bottom: 15px;
+`
+
+const StyledButton = styled.button`
+position: relative;
+background: linear-gradient(90deg, #0DCCF2 -45%, #AA00FF 127.41%);
+ font-size: 1em;
+padding: 15px 31px;
+height: 51px;
+cursor: pointer;
+border: 0px;
+display: inline-block;
+color: #fff;
+> span {
+    top: 1px;
+    right: -10px;
+}
+`;
+
+const ContentWrapper = styled.div`
+  padding: 30px 0px;
+  max-width: 75%;
+  margin: auto;
+  border-bottom: 2px solid rgba(237, 241, 247, 0.5);
+  @media (min-width: 1200px){
+  padding: 50px 0px;
+    
+  }
+`
+
+const SliderWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 15px;
+    justify-content: center;
+
+    @media (min-width: 768px){
+
+    }
+`
+
+const CardWrapper = styled.div`
+     max-width: 200px;
+     margin-bottom: 20px;
+`
+const ImgWrapper = styled.div`
+  margin-bottom: 20px;
+  >img{
+  border-radius  : 50%;
+  height: 180px;
+  width: 180px;
+  }
+`
+const CardContentWrapper = styled.div`
+    
+`
+const PersonName = styled.h3`
+    margin-bottom: 5px;
+`
+
+const PersonTitle = styled.span`
+    display: inline-block;
+    color: #666;
+`
+
+const MeetCreet: NextPage = () => {
+
+
+  return (
+    <Wrapper >
+      <ContentWrapper>
+            <Heading >
+            Meet The Crew
+            </Heading>
+
+            <SliderWrapper>
+                 <CardWrapper>
+                     <ImgWrapper>
+                       <img src="https://picsum.photos/200/300" alt="" />
+                     </ImgWrapper>
+                     <CardContentWrapper>
+                        <PersonName>
+                           Mandingo
+                        </PersonName>
+                        <PersonTitle>
+                           Commander
+                        </PersonTitle>
+                     </CardContentWrapper>
+                 </CardWrapper>
+
+                 <CardWrapper>
+                     <ImgWrapper>
+                       <img src="https://picsum.photos/200/300" alt="" />
+                     </ImgWrapper>
+                     <CardContentWrapper>
+                        <PersonName>
+                           Mandingo
+                        </PersonName>
+                        <PersonTitle>
+                           Commander
+                        </PersonTitle>
+                     </CardContentWrapper>
+                 </CardWrapper>
+
+                 <CardWrapper>
+                     <ImgWrapper>
+                       <img src="https://picsum.photos/200/300" alt="" />
+                     </ImgWrapper>
+                     <CardContentWrapper>
+                        <PersonName>
+                           Mandingo
+                        </PersonName>
+                        <PersonTitle>
+                           Commander
+                        </PersonTitle>
+                     </CardContentWrapper>
+                 </CardWrapper>
+
+               
+                 <CardWrapper>
+                     <ImgWrapper>
+                       <img src="https://picsum.photos/200/300" alt="" />
+                     </ImgWrapper>
+                     <CardContentWrapper>
+                        <PersonName>
+                           Mandingo
+                        </PersonName>
+                        <PersonTitle>
+                           Commander
+                        </PersonTitle>
+                     </CardContentWrapper>
+                 </CardWrapper>
+
+                 <CardWrapper>
+                     <ImgWrapper>
+                       <img src="https://picsum.photos/200/300" alt="" />
+                     </ImgWrapper>
+                     <CardContentWrapper>
+                        <PersonName>
+                           Mandingo
+                        </PersonName>
+                        <PersonTitle>
+                           Commander
+                        </PersonTitle>
+                     </CardContentWrapper>
+                 </CardWrapper>
+            </SliderWrapper>
+           
+        </ContentWrapper>
+          </Wrapper>
+
+  )
+}
+
+export default MeetCreet

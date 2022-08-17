@@ -9,6 +9,9 @@ import styles from '../styles/Home.module.css'
 import Navbar from '../components/Banner/Navbar'
 import HowItWorks from '../components/HowItWorks/HowItWorks'
 import TokenManagement from '../components/TokenManagement/TokenManagement'
+import SmartContract from '../components/SmartContract/SmartContract'
+import MeetCreet from '../components/MeetCreet/MeetCreet'
+import Backed from '../components/Backed/Backed'
 const Home: NextPage = () => {
   return (
     <div>
@@ -20,6 +23,9 @@ const Home: NextPage = () => {
      <SupportingProjects/>
      <HowItWorks/>
      <TokenManagement/>
+     <SmartContract/>
+     <MeetCreet/>
+     <Backed/>
     </div>
   )
 }
