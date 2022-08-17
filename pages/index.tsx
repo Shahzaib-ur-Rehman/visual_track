@@ -7,6 +7,7 @@ import StickyHeader from '../components/StickyHeader/StickyHeader'
 import SupportingProjects from '../components/SupportingProjects/SupportingProjects'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Banner/Navbar'
+import HowItWorks from '../components/HowItWorks/HowItWorks'
 const Home: NextPage = () => {
   return (
     <div>
@@ -15,6 +16,8 @@ const Home: NextPage = () => {
      <div className={styles.bannerimage}>
      <Banner/>
      </div>
+     <SupportingProjects/>
+     <HowItWorks/>
     </div>
   )
 }

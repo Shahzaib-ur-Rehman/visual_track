@@ -3,7 +3,7 @@
 }
 .bannerimage{
   background: url('../public/images/bannerImage.png');
-  background-size: cover;
+  background-size:cover;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 100vh;
 }

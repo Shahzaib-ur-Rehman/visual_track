@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import styled from 'styled-components';
 import Image from 'next/image';
-import EthereumImage from '../../public/images/project1.png'
-import Polygon from '../../public/images/project3.png'
-import Binance from '../../public/images/project2.png'
+import Binance from '../../public/svg/binance.svg'
+import Polygon from '../../public/svg/polygon.svg'
+import corns from '../../public/svg/corns.svg'
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 const Wrapper = styled.div` 
@@ -17,7 +17,7 @@ background-clip: text;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
-font-size: 16px;
+font-size: 20px;
 line-height: 120%;
 @media(min-width:576px){
   font-size: 48px;
@@ -39,7 +39,7 @@ const SupportingProjects: NextPage = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
-        <Grid item xs={8} margin={'auto'}>
+        <Grid item xs={8} md={12}  margin={'auto'}>
           <Wrapper >
             <Heading >
               Supporting Projects On
@@ -47,14 +47,22 @@ const SupportingProjects: NextPage = () => {
           </Wrapper>
         </Grid>
       </Grid>
-      <Grid container spacing={2}>
-        <Grid item xs={12}>
-          <ContentWrapper>
-            <Image src={EthereumImage} width={160} height={40} alt="e" />
-            <Image src={Binance} width={160} height={40} alt="e" />
-            <Image src={Polygon} width={160} height={40} alt="e" />
-          </ContentWrapper>
+      <Grid container spacing={2} style={{textAlign:'center', padding:"30px 100px"}} >
+        <Grid item xs={12} md={3} margin="auto"  >
+        <Image src={Binance} width={160} height={40} alt="e" />
         </Grid>
+        <Grid item xs={12} md={3} >
+        <Image src={Polygon} width={160} height={40} alt="e" />
+        </Grid>
+        <Grid item xs={12} md={3} >
+        <Image src={Binance} width={160} height={40} alt="e" />
+        </Grid>
+        <Grid item xs={12} md={3} >
+        <Image src={corns} width={160} height={40} alt="e" />
+        </Grid>
+
+        
+        
 
       </Grid>
     </Box>

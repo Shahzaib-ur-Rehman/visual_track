@@ -26,3 +26,81 @@ a {
     background: black;
   }
 }
+
+
+
+
+.step {
+  
+  padding: 10px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  
+  background-color: cream;
+}
+
+.v-stepper {
+  position: relative;
+/*   visibility: visible; */
+}
+
+
+/* regular step */
+.step .circle {
+  background-color: white;
+  border: 3px solid gray;
+  border-radius: 100%;
+  width: 20px;    /* +6 for border */
+  height: 20px;
+  display: inline-block;
+}
+
+.step .line {
+    top: 23px;
+  left: 12px;
+/*   height: 120px; */
+  height: 100%;
+    
+    position: absolute;
+    border-left: 3px dashed gray;
+}
+
+.step.completed .circle {
+  visibility: visible;
+  background: linear-gradient(90deg, #0DCCF2 0%, #AA00FF 100%);
+  border: 0px;
+}
+
+.step.completed .line {
+  /* border-left: 3px dashed rgb(6,150,215); */
+}
+
+.step.active .circle {
+visibility: visible;
+border: 0px;
+
+}
+
+.step.empty .circle {
+    visibility: hidden;
+}
+
+.step.empty .line {
+/*     visibility: hidden; */
+/*   height: 150%; */
+  top: 0;
+  height: 150%;
+}
+
+
+.step:last-child .line {
+  border-left: 3px solid white;
+  z-index: -1; /* behind the circle to completely hide */
+}
+
+.content {
+  margin-left: 20px;
+  display: inline-block;
+}

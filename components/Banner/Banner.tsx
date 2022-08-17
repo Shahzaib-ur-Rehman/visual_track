@@ -3,8 +3,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import styled from 'styled-components'
 import arrowImage from '../../public/svg/arrow.svg'
-
-import { Button } from '@mui/material';
+import mouseImage from '../../public/svg/Mouse.svg'
 import Image from 'next/image';
 const Wrapper = styled.section` 
 /* background: #037a7a; */
@@ -82,7 +81,7 @@ color: #fff;
 }
 `;
 
-const NavbarWrapper = styled.div``
+const MouseSpan = styled.div``
 export default function Banner() {
     return (
         <Wrapper>
@@ -101,6 +100,14 @@ export default function Banner() {
                     <Grid item xs={12} sm={12} md={6} >
                         
                     </Grid>
+
+                </Grid>
+                <Grid container spacing={2} margin="auto" textAlign={'center'}>
+                    <Grid item xs={12} sm={12} md={12} >
+                       <Image src={mouseImage} width={26} height={40} alt='mouse ' />
+                       <MouseSpan>Scroll Down to Join the Darkside</MouseSpan>
+                    </Grid>
+                    
 
                 </Grid>
             </Box>
