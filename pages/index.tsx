@@ -8,6 +8,7 @@ import SupportingProjects from '../components/SupportingProjects/SupportingProje
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Banner/Navbar'
 import HowItWorks from '../components/HowItWorks/HowItWorks'
+import TokenManagement from '../components/TokenManagement/TokenManagement'
 const Home: NextPage = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
      </div>
      <SupportingProjects/>
      <HowItWorks/>
+     <TokenManagement/>
     </div>
   )
 }
