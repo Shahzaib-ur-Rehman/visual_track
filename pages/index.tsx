@@ -12,6 +12,8 @@ import TokenManagement from '../components/TokenManagement/TokenManagement'
 import SmartContract from '../components/SmartContract/SmartContract'
 import MeetCreet from '../components/MeetCreet/MeetCreet'
 import Backed from '../components/Backed/Backed'
+import Faq from '../components/Faq/Faq'
+import Founder from '../components/Founder/Founder'
 const Home: NextPage = () => {
   return (
     <div>
@@ -26,6 +28,9 @@ const Home: NextPage = () => {
      <SmartContract/>
      <MeetCreet/>
      <Backed/>
+     <Faq/>
+     <Founder/>
+     <Footer/>
     </div>
   )
 }

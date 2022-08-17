@@ -67,11 +67,10 @@ const SliderWrapper = styled.div`
 `
 
 const CardWrapper = styled.div`
-     max-width: 200px;
-     margin-bottom: 20px;
+     
 `
 const ImgWrapper = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   >img{
   border-radius  : 50%;
   height: 180px;
@@ -101,41 +100,53 @@ const Backed: NextPage = () => {
             </Heading>
 
             <SliderWrapper>
-                 <CardWrapper>
+               
                      <ImgWrapper>
-                       <Image src={pulsar} height="100" width="150" alt="" />
+                       <Image src={pulsar} height="50" width="150" alt="" />
                      </ImgWrapper>
                     
-                 </CardWrapper>
-
-                 <CardWrapper>
-                     <ImgWrapper>
-                     <Image src={pulsar} height="100" width="150" alt="" />
-                     </ImgWrapper>
-                    
-                 </CardWrapper>
-
-                 <CardWrapper>
-                     <ImgWrapper>
-                       <Image src={pulsar} height="100" width="150" alt="" />
-                     </ImgWrapper>
-                    
-                 </CardWrapper>
+               
 
                
-                 <CardWrapper>
                      <ImgWrapper>
-                       <Image src={pulsar} height="100" width="150" alt="" />
+                     <Image src={pulsar} height="50" width="150" alt="" />
                      </ImgWrapper>
                     
-                 </CardWrapper>
+               
 
-                 <CardWrapper>
+               
                      <ImgWrapper>
-                       <Image src={pulsar} height="100" width="150" alt="" />
+                       <Image src={pulsar} height="50" width="150" alt="" />
                      </ImgWrapper>
                     
-                 </CardWrapper>
+               
+
+               
+               
+                     <ImgWrapper>
+                       <Image src={pulsar} height="50" width="150" alt="" />
+                     </ImgWrapper>
+                    
+               
+
+               
+                     <ImgWrapper>
+                       <Image src={pulsar} height="50" width="150" alt="" />
+                     </ImgWrapper>
+               
+                 
+               
+                     <ImgWrapper>
+                       <Image src={pulsar} height="50" width="150" alt="" />
+                     </ImgWrapper>
+               
+
+               
+                     <ImgWrapper>
+                       <Image src={pulsar} height="50" width="150" alt="" />
+                     </ImgWrapper>
+               
+
             </SliderWrapper>
            
         </ContentWrapper>
