@@ -10,10 +10,7 @@ const Wrapper = styled.div`
     text-align: center;
   `
 const Heading = styled.h2`
- background: linear-gradient(90deg, #0DCCF2 -24.73%, #AA00FF 124.6%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+color: #fff;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -26,9 +23,14 @@ line-height: 120%;
   `;
 
 const ContentWrapper = styled.div`
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 50px;
+    padding: 30px 0px;
+  max-width: 75%;
+  margin: auto;
+  border-bottom: 2px solid rgba(237, 241, 247, 0.5);
+  @media (min-width: 1200px){
+  padding: 50px 0px;
+    
+  }
 
   `
 
@@ -38,6 +40,7 @@ const SupportingProjects: NextPage = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }} paddingY="40px">
+      <ContentWrapper>
       <Grid container spacing={2}>
         <Grid item xs={8} md={12}  margin={'auto'}>
           <Wrapper >
@@ -47,7 +50,7 @@ const SupportingProjects: NextPage = () => {
           </Wrapper>
         </Grid>
       </Grid>
-      <Grid container spacing={2} style={{textAlign:'center', padding:"30px 100px"}} >
+      <Grid container spacing={2} style={{textAlign:'center',     padding: "30px 56px"}} >
         <Grid item xs={12} md={3} margin="auto"  >
         <Image src={Binance} width={160} height={40} alt="e" />
         </Grid>
@@ -65,6 +68,7 @@ const SupportingProjects: NextPage = () => {
         
 
       </Grid>
+      </ContentWrapper>
     </Box>
 
   )

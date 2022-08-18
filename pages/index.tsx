@@ -22,15 +22,19 @@ const Home: NextPage = () => {
      <div className={styles.bannerimage}>
      <Banner/>
      </div>
+     <div className={styles.backgound1}>
      <SupportingProjects/>
      <HowItWorks/>
      <TokenManagement/>
      <SmartContract/>
      <MeetCreet/>
+     </div>
+     <div  className={styles.backgound1}>
      <Backed/>
      <Faq/>
      <Founder/>
      <Footer/>
+     </div>
     </div>
   )
 }

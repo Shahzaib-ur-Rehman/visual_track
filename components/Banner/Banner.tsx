@@ -39,7 +39,7 @@ line-height: 38px;
 color: #FFFFFF;
 margin-bottom: 0;
 > span  {
-    background: linear-gradient(90deg, #0DCCF2 -24.73%, #AA00FF 124.6%);
+    background: #F9623B;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 background-clip: text;
@@ -71,7 +71,8 @@ margin-bottom: 25px;
 
 const StyledButton = styled.button`
 position: relative;
-  background: linear-gradient(90deg, #0DCCF2 -45%, #AA00FF 127.41%);
+background: #F9623B;
+border-radius: 50px;
   font-size: 1em;
   padding: 15px 31px;
   width: 180px;

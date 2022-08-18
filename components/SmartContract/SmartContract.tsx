@@ -27,7 +27,9 @@ display: inline-block;
   `;
 
 const SpanContent = styled.span`
-   
+   > svg{
+    fill: #F9623B;
+   }
 `
 
 const StyledButton = styled.button`
@@ -52,6 +54,7 @@ const ContentWrapper = styled.div`
   margin: auto;
   border-bottom: 2px solid rgba(237, 241, 247, 0.5);
   display: flex;
+  flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0 5px;
@@ -73,12 +76,12 @@ const SmartContract: NextPage = () => {
             <Heading >
             Smart Contract Audited by
             </Heading>
-            <SpanContent>
+            <div><SpanContent>
             <Image src={quantsstamp} width={'70px'} height={'70px'} alt='arrow'/>  
             </SpanContent>
             <SpanContent>
             <Image src={certik} width={'70px'} height={'70px'} alt='arrow'/>  
-            </SpanContent>
+            </SpanContent></div>
            
         </ContentWrapper>
           </Wrapper>

@@ -7,15 +7,15 @@ const Wrapper = styled.div`
     
   `
 const Heading = styled.h2`
- background: linear-gradient(90deg, #0DCCF2 -24.73%, #AA00FF 124.6%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+ color: #fff;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 30px;
 line-height: 120%;
+> span{
+  color: #F9623B;
+}
 @media(min-width:576px){
   font-size: 48px;
   margin-bottom: 7px;
@@ -28,7 +28,8 @@ const SpanContent = styled.div`
 
 const StyledButton = styled.button`
 position: relative;
-background: linear-gradient(90deg, #0DCCF2 -45%, #AA00FF 127.41%);
+background: #282780;
+border-radius: 50px;
  font-size: 1em;
 padding: 15px 31px;
 height: 51px;
@@ -85,14 +86,14 @@ display: inline-flex;
 margin-bottom: 10px;
 border-radius: 20px;
  >span{
-    background: #7962F9;
+    background: #F9623B;
     display: inline-block;
     padding: 4px;
     font-size: 12px;
     border-radius: 60%;
  } 
  >h3{
-    font-size: 12px;
+    font-size: 11px;
     color: #fff;
     display: inline-block;
  }  

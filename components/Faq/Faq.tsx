@@ -3,15 +3,13 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 import plus from '../../public/svg/plus-white.svg'
+import minus from '../../public/svg/minus.svg'
 const Wrapper = styled.div` 
     text-align: center;
     
   `
 const Heading = styled.h2`
- background: linear-gradient(90deg, #0DCCF2 -24.73%, #AA00FF 124.6%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+color: #fff;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -146,7 +144,7 @@ const Faq: NextPage = () => {
                
                
                      <Statement>
-                     <h3>Has VTVL replaced 'thebacker' branding?</h3>
+                     <h3>Has VTVL replaced thebacker branding?</h3>
                                           <span><Image src={plus} width="25px" height="25px" alt="" /></span>
 
                      </Statement>
@@ -156,7 +154,7 @@ const Faq: NextPage = () => {
                
                      <Statement>
                      <h3>How much does VTVL cost to use?</h3>
-                      <span><Image src={plus} width="25px" height="25px" alt="" /></span>
+                      <span><Image src={minus} width="25px" height="25px" alt="" /></span>
 
                      </Statement>
                
@@ -172,7 +170,7 @@ const Faq: NextPage = () => {
                
                      <Statement>
                      <h3>What digital wallets are compatible with the VTVL platform?</h3>
-                     <span><img src={plus} alt="" /></span>
+                     <span><Image src={plus} width="25px" height="25px" alt="" /></span>
                      </Statement>
                    
                    

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import ArrowImage from '../../public/svg/arrow.svg'
 import corssSvg from "../../public/svg/crosssvg.svg";
 const Wrapper = styled.div` 
-  background:linear-gradient(90deg, #0DCCF2 -24.73%, #AA00FF 124.6%);
+  background: radial-gradient(86.21% 361.02% at 41.21% 50.21%, #A1251F 0%, #122790 100%);
   text-align:center;
   padding:10px;
   position: -webkit-sticky;
@@ -47,11 +47,11 @@ const StickyHeader: NextPage = () => {
     <Wrapper >
       <Heading >
       Join Our Waiting List  I  Token Management Platform from Mint to Moon 
-      <Image src={ArrowImage} width={7} height={14} alt="arrow" />
+      {/* <Image src={ArrowImage} width={7} height={14} alt="arrow" /> */}
       </Heading>
-      <CrossArrowWrapper>
+      {/* <CrossArrowWrapper>
       <Image src={corssSvg} width={22} height={22} alt="arrow" />
-      </CrossArrowWrapper>
+      </CrossArrowWrapper> */}
     </Wrapper>
   )
 }

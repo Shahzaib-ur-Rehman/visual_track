@@ -8,14 +8,11 @@ const Wrapper = styled.div`
     
   `
 const Heading = styled.h2`
- background: linear-gradient(90deg, #0DCCF2 -24.73%, #AA00FF 124.6%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+ color:#fff;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
-font-size: 20px;
+font-size: 28px;
 line-height: 120%;
 @media(min-width:576px){
   font-size: 48px;
@@ -29,7 +26,8 @@ const SpanContent = styled.div`
 
 const StyledButton = styled.button`
 position: relative;
-background: linear-gradient(90deg, #0DCCF2 -45%, #AA00FF 127.41%);
+background: #F9623B;
+border-radius: 50px;
  font-size: 1em;
 padding: 15px 31px;
 height: 51px;

@@ -8,10 +8,7 @@ const Wrapper = styled.div`
     
   `
 const Heading = styled.h2`
- background: linear-gradient(90deg, #0DCCF2 -24.73%, #AA00FF 124.6%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+ color:#fff;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;

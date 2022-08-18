@@ -5,7 +5,7 @@ body {
   margin: 0;
   font-family: Roboto;
   color: white;
-    background: black;
+    /* background: black; */
 }
 
 a {
@@ -29,7 +29,13 @@ a {
   }
 }
 
+.slick-arrow .slick-prev ::before{
+  content: "" !important;
+}
 
+.slick-dots li button::before{
+  color: #F9623B !important;
+}
 
 
 .step {

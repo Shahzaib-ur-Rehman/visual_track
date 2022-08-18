@@ -6,4 +6,10 @@
   background-size:cover;
   background-repeat: no-repeat;
   height: 100vh;
+
+}
+.backgound1{
+  background: url('../public/images/background_2.png');
+  background-size:cover;
+  background-repeat: no-repeat;
 }
